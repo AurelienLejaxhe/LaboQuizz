@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #bdb8b8; 
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+    
+    .drapeau {
+    width: 100%;
+    height: 10cm;
+    background-color: black;
+    position: relative;
+    }
+    
+    .bande {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    }
+    
+    .bande.noir {
+    background-color: black;
+    }
+    
+    .bande.jaune {
+    background-color: yellow;
+    }
+    
+    .bande.rouge {
+    background-color: red;
+    }
+    
+    .texte {
+    position: absolute;
+    top: 50%;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4cm;
+    color: white;
+    text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+    }
+    
+    .ligne-boutons {
+        text-align: center; 
+      }
+      
+      .bouton {
+        display: inline-block;
+        background-color: gray;
+        color: chartreuse;
+        padding: 15px 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        font-size: 30px; 
+        margin: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .bouton:hover {
+        background-color: darkgray; 
+      }

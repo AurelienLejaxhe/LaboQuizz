@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/LeFootballBelge.css">
+    <link rel="stylesheet" href="sweetalert2.min.css"> 
+    <title>BelgiQuizz</title>
+</head>
+<body>
+    <div class="drapeau">
+        <div class="bande noir"></div>
+        <div class="bande jaune"></div>
+        <div class="bande rouge"></div>
+        <div class="texte">
+            belgiQuizzz
+        </div>
+    </div>
+
+    <button id="btnPret" onclick="demarrerLeQuizz()">Prêt</button>
+
+    <div>
+        <p id="score"></p>
+        <p id="timer"></p>
+    </div>
+    <div>
+        <h1 id="question"></h1>
+    </div>
+    <div id="prop">
+        <p id="propositions"></p>
+    </div>
+    <div>
+        <button id="pagescore" onclick="versPageScore()" >Vers les Scores</button>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+<script src="sweetalert2.min.js"></script>
+<script src="/script/LeFootballBelge.js"></script>
+</body>
+</html>
+

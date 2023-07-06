@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/Regles.css">
+    <title>ReglesDuJeu</title>
+</head>
+<body>
+    <div class="container">
+        <h1>BelgiQuizzz</h1>
+        
+        <div id="rules">
+            <h2>Règles du jeu :</h2>
+            <p>Enregistrement :</p>
+            <p>Une fois arrivé sur la page d'accueil du jeu, tu dois :</p>
+            <p>- Accepter les règles du jeu.</p>
+            <p>- Saisir ton pseudo.</p>
+            
+            <p>Choix du thème :</p>
+            <p>Après avoir accepté les règles et saisi ton pseudo, tu es redirigé vers la page de choix du thème.</p>
+            <p>Tu peux choisir parmi quatre thèmes proposés.</p>
+            
+            <p>Déroulement du jeu :</p>
+            <p>Une fois le thème sélectionné, tu es redirigé vers la page de jeu.</p>
+            <p>Le jeu se compose de 20 questions qui sont présentées une par une.</p>
+            <p>À chaque question, tu as 15 secondes pour répondre.</p>
+            
+            <p>-Les 10 premieres questions sont "Duo" : 2 propositions de réponse avec 1 point en jeu.</p>
+            <p>-Les 5 suivantes sont "Carré" : 4 propositions de réponse avec 3 points en jeu.</p>
+            <p>-Les 5 dernières sont "Cash" : Répondre sans propositions et avec la bonne orthographe pour gagner 5 points.</p>
+            <p>Une fois que le compteur de 20 secondes est écoulé, la question suivante s'affiche.</p>
+            
+            <p>Comptabilisation des points :</p>
+            <p>Les points sont comptabilisés et additionnés après chaque question.</p>
+            <p>Tu accumules des points en fonction des choix de réponse :</p>
+            <p>- Pour la réponse "Duo", 1 point est attribué si la réponse est correcte.</p>
+            <p>- Pour la réponse "Carré", 3 points sont attribués si la réponse est correcte.</p>
+            <p>- Pour la réponse "Cash", 5 points sont attribués si la réponse est correcte et avec la bonne orthographe.</p>
+        </div>
+        
+        <div id="enregistrement">
+            <h2>Enregistrement :</h2>
+            <p>Accepte les règles du jeu et indique ton pseudo :</p>
+            <form action="ChoixTheme.html" onsubmit="enregisterPseudo()">
+                <label for="pseudo">Pseudo :</label>
+                <input type="text" id="pseudo" name="pseudo" required>
+                <br><br>
+                <label for="rules">J'ai lu et j'accepte les règles du jeu :</label>
+                <input type="checkbox" id="rules" name="rules" required>
+                <br><br>
+                <button type="submit">Commencer</button>
+            </form>
+        </div>
+    </div>
+<script src="/script/Regles.js"></script>
+</body>
+</html>

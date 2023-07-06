@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+    background-color: rgb(192, 185, 185);
+  }
+  
+  .drapeau {
+    width: 100%;
+    height: 10cm;
+    background-color: black;
+    position: relative;
+  }
+  
+  .bande {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+  }
+  
+  .bande.noir {
+    background-color: black;
+  }
+  
+  .bande.jaune {
+    background-color: yellow;
+  }
+  
+  .bande.rouge {
+    background-color: red;
+  }
+  
+  .texte {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4cm;
+    color: white;
+    text-shadow:
+      -2px -2px 0 black,
+       2px -2px 0 black,
+      -2px  2px 0 black,
+       2px  2px 0 black;
+  }
+  #timer{
+    font-size: 30px;
+    color:red;
+    text-align: end;
+  }
+  #question{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 4px solid black;
+    background-color: gray;
+    font-size: 30px;
+    color: chartreuse;
+    text-align: center;
+  }
+ #propositions{
+    font-size: 40px;
+    text-align: center;
+ }
+ #btnPret {
+  background-color: gray;
+  color: chartreuse;
+  font-size: 50px;
+  padding: 50px 50px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#score{
+  font-size: 40px;
+  color: red;
+}
+#prop button {
+  font-size: 30px;
+  padding: 10px 20px;
+  margin-right: 15px;
+}
+#prop input{
+  width: 200px;
+  height: 40px;
+}
+#pagescore{
+  
+  font-size: 30px;
+  text-align: center;
+}

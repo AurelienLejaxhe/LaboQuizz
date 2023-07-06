@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #bdb8b8; 
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}    
+.drapeau {
+width: 100%;
+height: 10cm;
+background-color: black;
+position: relative;
+}   
+.bande {
+width: 33.33%;
+height: 100%;
+float: left;
+}   
+.bande.noir {
+background-color: black;
+}    
+.bande.jaune {
+background-color: yellow;
+}
+.bande.rouge {
+background-color: red;
+}
+.texte {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 4cm;
+color: white;
+text-shadow:
+-2px -2px 0 black,
+2px -2px 0 black,
+-2px 2px 0 black,
+2px 2px 0 black;
+}
+#pseudo{
+font-size: 50px;
+text-align: center;
+}
+#score {
+font-size: 40px;
+text-align: center;
+color: red;
+border: 2px solid gold;
+}
+#lien {
+color: chartreuse;
+text-decoration: none;
+font-size: 30px;
+background-color:black;
+}
